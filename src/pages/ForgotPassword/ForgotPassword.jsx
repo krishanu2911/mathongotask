@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "../../component/index";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function ForgotPassword() {
+  const [ userEmail, setUserEmail ] = useState("");
+  const [ emailError, setEmailError] = useState(true);
+  const emailRegex = new RegExp(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/);
+  const navigate = useNavigate();
+  function handleChange(e) {
+    const value = e.target.value;
+    emailRegex.test(value) ? setEmailError(false) : setEmailError(true)
+    setUserEmail(value)
+  }
+  function submitHandler(event) {
+    event.preventDefault();
+
+    !emailError && navigate("/");
+  }
   return (
     <div>
       <Navbar NavBtn="Sign In" />
@@ -16,16 +30,21 @@ function ForgotPassword() {
               send you a link to reset your password.
             </p>
           </div>
+          <form className=" w-full" onSubmit={(e) => submitHandler(e)}>
           <div className=" flex w-full gap-6 justify-center">
             <input
               type="text"
               className="btnBorder rounded-lg border-slate-300 py-2 px-2 w-full"
               placeholder="Email Address"
+              name="email"
+              onChange={(e) => handleChange(e)}
+              required
             />
           </div>
-          <Link to="/" className=" text-center  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
+          <button  className="mt-5 text-center  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
             Send Link
-          </Link>
+          </button>
+          </form>
           <h1 className=" text-black font-bold text-center">
           Forgot your email?
           </h1>
