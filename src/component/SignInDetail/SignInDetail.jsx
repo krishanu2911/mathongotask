@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./SignInDetail.module.css";
 import { FcGoogle } from "react-icons/fc";
-import { BsEyeSlash } from "react-icons/bs";
+import { BsEyeSlash, BsEye } from "react-icons/bs";
 function SignInDetail() {
+  const [ showPass , setShowPass ] = useState(false)
   return (
     <div className="flex flex-col  p-6 min-h-screen h-full justify-between">
       <div className="flex flex-col gap-32">
@@ -41,11 +42,13 @@ function SignInDetail() {
                   />
                   <div className="btnBorder rounded-lg  border-slate-300 py-2 px-2 w-full  mt-3 justify-between flex items-center">
                     <input
-                      type="password"
+                      type={ showPass ? "text" : "password"}
                       className=" border-transparent outline-transparent w-full"
                       placeholder="Password"
                     />
-                    <BsEyeSlash className=" cursor-pointer" />
+                    {
+                      showPass ? <BsEye onClick={() => setShowPass( prev => !prev)} /> : <BsEyeSlash onClick={() => setShowPass( prev => !prev)}  className=" cursor-pointer" />
+                    }
                   </div>
                 </div>
               </div>
