@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../component/index";
+import { Link } from "react-router-dom";
 function OtpAuth() {
   const dummyArray = [1, 2, 3, 4, 5];
   return (
@@ -25,9 +26,13 @@ function OtpAuth() {
               );
             })}
           </div>
-          <button className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
+          <Link
+            className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700 text-center"
+            to="/loggedin"
+          >
             Verify Account
-          </button>
+          </Link>
+
           <h1 className=" text-gray-600 text-center">
             Resend code in <span className=" text-black font-bold">59:00</span>{" "}
           </h1>

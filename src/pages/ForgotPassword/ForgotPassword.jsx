@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../component/index";
+import { Link } from "react-router-dom";
 function ForgotPassword() {
   return (
     <div>
@@ -22,9 +23,9 @@ function ForgotPassword() {
               placeholder="Email Address"
             />
           </div>
-          <button className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
+          <Link to="/" className=" text-center  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
             Send Link
-          </button>
+          </Link>
           <h1 className=" text-black font-bold text-center">
           Forgot your email?
           </h1>

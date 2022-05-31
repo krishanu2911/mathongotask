@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./SignUpDetail.module.css";
+import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
 function SignUpDetail() {
@@ -18,10 +19,12 @@ function SignUpDetail() {
           </header>
           <section>
             <div>
-              <div className=" flex justify-center  items-center gap-2 cursor-pointer  hover:bg-slate-50 btnBorder   rounded-lg   border-slate-300  py-2 ">
-                <FcGoogle />
-                Sign in with Google
-              </div>
+              <Link to="/otpauth">
+                <div className=" flex justify-center  items-center gap-2 cursor-pointer  hover:bg-slate-50 btnBorder   rounded-lg   border-slate-300  py-2 ">
+                  <FcGoogle />
+                  Sign up with Google
+                </div>
+              </Link>
               <div className="  my-5 text-center ">
                 <h1 className=" text-sm text-gray-500">
                   -------- or with email --------
@@ -70,12 +73,16 @@ function SignUpDetail() {
               </span>{" "}
               , and .
             </p>
-            <button className=" w-full bg-blue-700 rounded-lg p-3 text-white font-semibold mt-8">
-              Sign In
-            </button>
+            <Link to="/otpauth">
+              <button className=" w-full bg-blue-700 rounded-lg p-3 text-white font-semibold mt-8">
+                Sign Up
+              </button>
+            </Link>
             <h1 className=" text-center mt-8">
               Already have an account?
-              <span className=" font-bold">Sign In</span>
+              <Link to="/">
+                <span className=" font-bold">Sign In</span>
+              </Link>
             </h1>
           </section>
         </section>

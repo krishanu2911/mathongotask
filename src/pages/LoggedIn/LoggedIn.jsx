@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../component/index";
+import { Link } from "react-router-dom";
 function LoggedIn() {
   return (
     <div>
@@ -14,9 +15,9 @@ function LoggedIn() {
             You’re logged in. Well done!
             </p>
           </div>
-          <button className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
+          <Link to="/" className="text-center cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700">
             Log Out
-          </button>
+          </Link>
         </div>
         <footer className="flex justify-between w-full mt-56 text-gray-500">
           <h1>Privacy Policy</h1>
