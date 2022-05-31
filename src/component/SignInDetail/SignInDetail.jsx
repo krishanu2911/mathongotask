@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./SignInDetail.module.css";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
+import { Link } from "react-router-dom";
 function SignInDetail() {
   const [ showPass , setShowPass ] = useState(false)
   return (
@@ -25,10 +26,13 @@ function SignInDetail() {
             </header>
             <section>
               <div>
-                <div className=" flex justify-center  items-center gap-2 cursor-pointer  hover:bg-slate-50 btnBorder   rounded-lg   border-slate-300  py-2 ">
+                <Link to="otpauth" >
+                 <div className=" flex justify-center  items-center gap-2 cursor-pointer  hover:bg-slate-50 btnBorder   rounded-lg   border-slate-300  py-2 ">
                   <FcGoogle />
                   Sign in with Google
-                </div>
+                </div> 
+                </Link>
+                
                 <div className="  my-5 text-center ">
                   <h1 className=" text-sm text-gray-500">
                     -------- or with email --------
@@ -57,14 +61,19 @@ function SignInDetail() {
                   <input type="checkbox" className=" rounded-full" />
                   <label htmlFor="">Remember me</label>
                 </div>
-                <h1 className=" text-blue-700 font-semibold">
+                <Link to="forgotpassword" >
+                <h1 className="text-blue-700 font-semibold cursor-pointer">
                   Forgot Password?
-                </h1>
+                </h1>  
+                </Link>
+                
               </div>
+              <Link to="otpauth" >
               <button className=" w-full bg-blue-700 rounded-lg p-3 text-white font-semibold mt-8">
                 Sign In
               </button>
-              <h1 className=" text-center mt-8">Don't have an account? <span className=" font-bold">Sign Up</span> </h1>
+              </Link>
+              <h1 className=" text-center mt-8">Don't have an account? <Link to="signup" ><span className=" font-bold">Sign Up</span></Link>  </h1>
             </section>
           </section>
         </div>
