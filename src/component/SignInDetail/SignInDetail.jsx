@@ -26,7 +26,7 @@ function SignInDetail() {
             </header>
             <section>
               <div>
-                <Link to="otpauth" >
+              <Link to="/loggedin" >
                  <div className=" flex justify-center  items-center gap-2 cursor-pointer  hover:bg-slate-50 btnBorder   rounded-lg   border-slate-300  py-2 ">
                   <FcGoogle />
                   Sign in with Google
