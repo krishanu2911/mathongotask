@@ -74,7 +74,7 @@ function SignUpDetail() {
               Sign In
             </button>
             <h1 className=" text-center mt-8">
-              Already have an account?{" "}
+              Already have an account?
               <span className=" font-bold">Sign In</span>
             </h1>
           </section>
