@@ -1,3 +1,29 @@
+# Overpay Webapp
+## Tech
+- Frontend React.js
+## App user Flow Doc Link
+https://docs.google.com/document/d/10hdKdCkv2NxB27A8Fc-aKFJk5FQzkWZ2oaXk_HEybbI/edit?usp=sharing
+## Demo
+
+
+https://user-images.githubusercontent.com/75560307/171173255-3c7a56e9-3841-48ed-944b-d49f760c980b.mp4
+
+## Flow the code process is documented througth pr's
+# Folder Structure
+## Component Folder
+This folder has all the component which where using in pages
+- A Component has two file
+   - JSX file
+   - module css file ( written css related to the particular component )
+## Pages Folder
+This contain all the pages of the app
+## Route
+ Routhpath.jsx contain the path to all the pages which is used in the App.js file
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
