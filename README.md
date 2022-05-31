@@ -3,7 +3,7 @@
 - Frontend React.js
 - Tailwind
 # Live Link
-https://mathongotaskoverpay.vercel.app/
+https://overpaymathongo.vercel.app/
 ## App user Flow Doc Link
 https://docs.google.com/document/d/10hdKdCkv2NxB27A8Fc-aKFJk5FQzkWZ2oaXk_HEybbI/edit?usp=sharing
 ## Demo
