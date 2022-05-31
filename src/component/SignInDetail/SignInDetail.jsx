@@ -61,6 +61,7 @@ function SignInDetail() {
               <button className=" w-full bg-blue-700 rounded-lg p-3 text-white font-semibold mt-8">
                 Sign In
               </button>
+              <h1 className=" text-center mt-8">Don't have an account? <span className=" font-bold">Sign Up</span> </h1>
             </section>
           </section>
         </div>
