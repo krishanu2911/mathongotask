@@ -33,12 +33,10 @@ function SignInDetail() {
     setUserDetail({ ...userDetail, [name]: value });
   }
   const validateForm = (name, value) => {
-    console.log(name,value)
     switch (name) {
       case "email":
         return !emailRegex.test(value);
       case "password":
-        console.log(value.length > 6)
         return !value.length > 6;
       default:
         return true;
@@ -46,7 +44,6 @@ function SignInDetail() {
   };
   function submitHandler(event) {
     event.preventDefault();
-    console.log(error)
     if( !error.email.isError && !error.password.isError){
       navigate("/loggedin")
     }
