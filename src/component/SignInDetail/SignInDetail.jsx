@@ -68,7 +68,7 @@ function SignInDetail() {
                 </Link>
                 
               </div>
-              <Link to="otpauth" >
+              <Link to="/loggedin" >
               <button className=" w-full bg-blue-700 rounded-lg p-3 text-white font-semibold mt-8">
                 Sign In
               </button>
