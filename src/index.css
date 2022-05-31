@@ -9,3 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root{
+  --backgroud-blue-cust: #194BFB;
+}
+.btnBorder{
+  border-width: 0.1rem;
+}

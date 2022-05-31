@@ -1,0 +1,24 @@
+.signIn {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 55fr 45fr;
+  grid-template-rows: auto;
+  max-width: 100%;
+}
+.signInBanner {
+    background-color: var(--backgroud-blue-cust);
+    width: 100%;
+  /* background-image: url("https://res.cloudinary.com/krishanucloud/image/upload/v1653939433/backgroundpattern_s4zzgj.png"); */
+  /* background-size:cover; */
+  /* background-repeat: no-repeat; */
+  /* height: 20rem; */
+}
+.signInDetailSection{
+    /* width: 10rem; */
+}
+@media screen and (max-width: 758px) {
+  .signIn {
+    grid-auto-flow: row;
+    grid-template-columns: unset;
+  }
+}

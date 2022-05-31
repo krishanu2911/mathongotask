@@ -1,7 +1,11 @@
 import "./App.css";
 import { RoutePath } from "./route/RoutePath";
 function App() {
-  return <RoutePath />;
+  return (
+    <div className="App">
+      <RoutePath />
+    </div>
+  );
 }
 
 export default App;
