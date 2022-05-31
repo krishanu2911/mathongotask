@@ -15,3 +15,9 @@ body {
 .btnBorder{
   border-width: 0.1rem;
 }
+.cardBtn{
+  width: 100%;
+}
+.cardWidth{
+  max-width: 25rem;
+}
