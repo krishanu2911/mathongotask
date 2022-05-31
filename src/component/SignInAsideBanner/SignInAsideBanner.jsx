@@ -15,6 +15,7 @@ function SignInAsideBanner() {
           src="https://res.cloudinary.com/krishanucloud/image/upload/v1653951028/signinbanner_kdbxcv.png"
           alt="hero-banner"
         />
+        {/* Banner Text Section */}
         <div className=" flex flex-col justify-center items-center w-4/5 gap-5">
           <h1 className=" text-4xl font-bold text-white ">
             Get better with money
