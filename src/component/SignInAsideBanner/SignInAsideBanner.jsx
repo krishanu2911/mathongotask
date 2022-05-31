@@ -7,7 +7,7 @@ function SignInAsideBanner() {
         style={{
           width: "object-fit",
         }}
-        src="https://res.cloudinary.com/krishanucloud/image/upload/v1653939433/backgroundpattern_s4zzgj.png"
+        src="https://res.cloudinary.com/krishanucloud/image/upload/v1653941584/backgroundpattern_kq1ein.png"
         alt="pattern-bg"
       />
       <div className= {` ${style.imagePosition} absolute flex flex-col  justify-center items-center gap-24`}>
