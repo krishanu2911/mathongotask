@@ -1,0 +1,15 @@
+ .asideSection {
+    background-color: var(--backgroud-blue-cust);
+    width: 100%;
+ } 
+.imagePosition{
+  top: 12rem;
+  left: 1.5rem;
+  transition: linear 0.5s;
+}
+
+@media screen and (max-width: 1156px) {
+  .imagePosition{
+    top: 8rem;
+  }
+}

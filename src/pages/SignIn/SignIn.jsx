@@ -1,9 +1,11 @@
 import React from "react";
-
+import { SignInDetail, SignInAsideBanner } from "../../component/index";
+import style from "./SignIn.module.css";
 function SignIn() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">signIn</h1>
+    <div className={`${style.signIn}`}>
+      <SignInDetail />
+      <SignInAsideBanner />
     </div>
   );
 }
