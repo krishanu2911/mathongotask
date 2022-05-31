@@ -1,8 +1,13 @@
 import React from "react";
 import { Navbar } from "../../component/index";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function OtpAuth() {
   const dummyArray = [1, 2, 3, 4, 5];
+  const navigate = useNavigate();
+  function submitHandler(event) {
+    event.preventDefault();
+    navigate("/loggedin");
+  }
   return (
     <div>
       <Navbar NavBtn="Sign In" />
@@ -15,24 +20,23 @@ function OtpAuth() {
             </p>
             <h1 className=" text-sm">alesiaka******@mail.com</h1>
           </div>
-          <div className=" flex w-full gap-6 justify-center">
-            {dummyArray.map((item) => {
-              return (
-                <input
-                  type="text"
-                  className="btnBorder rounded-lg border-slate-300 w-10 h-10 text-center"
-                  maxLength="1"
-                />
-              );
-            })}
-          </div>
-          <Link
-            className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700 text-center"
-            to="/loggedin"
-          >
-            Verify Account
-          </Link>
-
+          <form onSubmit={(e) => submitHandler(e)}>
+            <div className=" flex w-full gap-6 justify-center mb-4">
+              {dummyArray.map((item) => {
+                return (
+                  <input
+                    type="text"
+                    className="btnBorder rounded-lg border-slate-300 w-10 h-10 text-center"
+                    maxLength="1"
+                    required
+                  />
+                );
+              })}
+            </div>
+            <button className="  cardBtn py-2 rounded-lg text-white font-semibold bg-blue-700 text-center">
+              Verify Account
+            </button>
+          </form>
           <h1 className=" text-gray-600 text-center">
             Resend code in <span className=" text-black font-bold">59:00</span>{" "}
           </h1>
