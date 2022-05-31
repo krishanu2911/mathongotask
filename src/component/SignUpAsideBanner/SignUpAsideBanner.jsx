@@ -18,6 +18,7 @@ function SignUpAsideBanner() {
           src="https://res.cloudinary.com/krishanucloud/image/upload/v1653967420/signUpBanner_bbyw9j.png"
           alt="hero-banner"
         />
+        {/* Banner Text Section */}
         <div className=" flex flex-col justify-center items-center w-4/5 gap-5">
           <h1 className=" text-4xl font-bold text-white ">
             Speady, Easy and Fast
