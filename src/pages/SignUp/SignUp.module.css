@@ -1,0 +1,13 @@
+.signUp {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 45fr 55fr;
+    grid-template-rows: auto;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 758px) {
+    .signUp {
+      grid-auto-flow: row;
+      grid-template-columns: unset;
+    }
+  }
