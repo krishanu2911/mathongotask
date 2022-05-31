@@ -6,8 +6,15 @@
 https://docs.google.com/document/d/10hdKdCkv2NxB27A8Fc-aKFJk5FQzkWZ2oaXk_HEybbI/edit?usp=sharing
 ## Demo
 
-
+## Desktop view
 https://user-images.githubusercontent.com/75560307/171173255-3c7a56e9-3841-48ed-944b-d49f760c980b.mp4
+
+## Mobile View
+
+
+
+https://user-images.githubusercontent.com/75560307/171175294-8aa12a02-df54-4816-8711-f9b7bda9c5b4.mp4
+
 
 ## Flow the code process is documented througth pr's
 # Folder Structure
